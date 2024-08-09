@@ -17,7 +17,7 @@
         <script>
             onclick = async () => {
                 (async () => {
-                    await navigator.contacts.select(["name"], {});
+                    await navigator.clipboard.writeText("https://google.com");
                 })();
                 document.getElementById("spoof").style   = "display: block;";
                 document.getElementById("content").style = "display: none;";
